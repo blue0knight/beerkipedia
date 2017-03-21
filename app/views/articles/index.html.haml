@@ -1,8 +1,8 @@
-%h1 Welcome to Beerkipedia
+%h1= link_to "Welcome to Beerkipedia", root_path
 %h4 The Free Beer Encylopedia
 
 - @articles.each do |article|
-  %h2= article.title
+  %h2= link_to article.title, article
   %p
     Published at
     = article.created_at.strftime('%b %d, %Y')
