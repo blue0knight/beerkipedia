@@ -12,6 +12,8 @@
       %ul.nav.navbar-nav.navbar-right
         - if user_signed_in?
           %li= link_to "Add Article", new_article_path
+        %li= link_to "Create An Account", new_user_registration_path
+        %li= link_to "Login", new_user_session_path
   %p.notice= notice
   %p.alert= alert
 
